@@ -43,7 +43,15 @@
 
       <!-- Right Column: Form -->
       <div data-ps="src/components/home/Contact.astro:right-col">
-        <form id="contact-form" class="flex flex-col gap-5" data-ps="src/components/home/Contact.astro:form">
+        <form
+          id="contact-form"
+          class="flex flex-col gap-5"
+          action="https://formspree.io/f/myegqyal"
+          method="POST"
+          data-contact-form
+          data-ps="src/components/home/Contact.astro:form"
+        >
+          <input type="hidden" name="_subject" value="Bright Idea Group website inquiry" />
           <div class="flex flex-col gap-2" data-ps="src/components/home/Contact.astro:field-name">
             <label for="name" class="text-[16px] font-normal text-[#222222]" data-ps="src/components/home/Contact.astro:lknwai">Name</label>
             <input
@@ -99,10 +107,10 @@
           </div>
 
           <!-- Form status messages -->
-          <div id="form-success" class="hidden p-4 rounded-[4px] bg-[#ECFDF3] border border-[#027A48] text-[#027A48] text-[16px]" data-ps="src/components/home/Contact.astro:1ijz2d">
+          <div id="form-success" class="success-message hidden p-4 rounded-[4px] bg-[#ECFDF3] border border-[#027A48] text-[#027A48] text-[16px]" data-ps="src/components/home/Contact.astro:1ijz2d">
             Thank you! Your submission has been received!
           </div>
-          <div id="form-error" class="hidden p-4 rounded-[4px] bg-[#FEF3F2] border border-[#B42318] text-[#B42318] text-[16px]" data-ps="src/components/home/Contact.astro:1ijz2e">
+          <div id="form-error" class="error-message hidden p-4 rounded-[4px] bg-[#FEF3F2] border border-[#B42318] text-[#B42318] text-[16px]" data-ps="src/components/home/Contact.astro:1ijz2e">
             Oops! Something went wrong while submitting the form.
           </div>
         </form>
@@ -110,46 +118,3 @@
     </div>
   </div>
 </section>
-
-<script is:inline>
-  const form = document.getElementById('contact-form');
-  const successBox = document.getElementById('form-success');
-  const errorBox = document.getElementById('form-error');
-  const submitBtn = document.getElementById('submit-btn');
-
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    successBox?.classList.add('hidden');
-    errorBox?.classList.add('hidden');
-    if (submitBtn) submitBtn.disabled = true;
-
-    const formData = new FormData(form);
-    const data = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      phone: formData.get('phone'),
-      message: formData.get('message')
-    };
-
-    try {
-      const res = await fetch('/psapi-internal-v1/forms/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-      });
-
-      if (res.ok) {
-        successBox?.classList.remove('hidden');
-        form.reset();
-      } else {
-        errorBox?.classList.remove('hidden');
-      }
-    } catch {
-      errorBox?.classList.remove('hidden');
-    } finally {
-      if (submitBtn) submitBtn.disabled = false;
-    }
-  });
-</script>

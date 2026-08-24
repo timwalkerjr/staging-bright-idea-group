@@ -1,0 +1,8 @@
+node_modules/
+.astro/
+dist/
+static-app-dist/
+.netlify/
+.env
+.env.*
+!.env.example

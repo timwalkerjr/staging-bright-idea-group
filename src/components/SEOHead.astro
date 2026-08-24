@@ -39,7 +39,7 @@ const slug = pathname === '/' ? 'index' : pathname.replace(/^\/|\/$/g, '');
 
 const autoImage = (ACCOUNT_ID && SITE_ID)
   ? `${OG_IMAGE_CDN_URL}/${ACCOUNT_ID}/${SITE_ID}/${slug}-og.png`
-  : `/${slug === 'index' ? 'home' : slug.split('/')[0]}-og.jpg`;
+  : SITE.ogImage;
 const finalImage = image || autoImage;
 
 // Use provided canonical URL or generate from current path

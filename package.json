@@ -2,6 +2,7 @@
   "name": "stunning-astro-template",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@11.23.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -20,7 +21,6 @@
     "glob": "^13.0.6",
     "tailwindcss": "^4.3.0",
     "@tailwindcss/typography": "^0.5.19",
-    "@astrojs/cloudflare": "^14.1.4",
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
