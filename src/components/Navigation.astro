@@ -2,39 +2,36 @@
 // Navigation matching brightideagroup.com exactly
 ---
 
-<header id="navbar" class="relative z-40 bg-white border-b border-black/5" data-ps="src/components/Navigation.astro:header">
-  <div class="max-w-[1440px] mx-auto px-6 py-4 flex items-center justify-between" data-ps="src/components/Navigation.astro:nav-container">
+<header id="navbar" class="relative z-40 bg-white border-b border-black/5">
+  <div class="max-w-[1440px] mx-auto px-6 py-4 flex items-center justify-between">
     <!-- Logo -->
-    <a href="/" class="inline-flex items-center" data-ps="src/components/Navigation.astro:logo-link">
+    <a href="/" class="inline-flex items-center">
       <img
-        src="https://pagesmith-cdn.com/06cfb84b/images/68e9ad149fb2838ec8124209_LOGO-v6-final-640.webp"
+        src="/assets/images/logo.webp"
         alt="Bright Idea Group"
         class="h-[44px] sm:h-[48px] w-auto object-contain"
-        data-ps="src/components/Navigation.astro:logo-img"
       />
     </a>
 
     <!-- Desktop Navigation Links & Action Buttons -->
-    <div class="hidden lg:flex items-center gap-8" data-ps="src/components/Navigation.astro:desktop-nav">
-      <nav class="flex items-center gap-8" data-ps="src/components/Navigation.astro:links-row">
-        <a href="/" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] transition-colors" data-ps="src/components/Navigation.astro:link-home">Home</a>
-        <a href="/services" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] transition-colors" data-ps="src/components/Navigation.astro:link-services">Services</a>
-        <a href="/team" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] transition-colors" data-ps="src/components/Navigation.astro:link-team">Team</a>
-        <a href="/contact" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] transition-colors" data-ps="src/components/Navigation.astro:link-contact">Contact</a>
+    <div class="hidden lg:flex items-center gap-8">
+      <nav class="flex items-center gap-8">
+        <a href="/" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] transition-colors">Home</a>
+        <a href="/services" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] transition-colors">Services</a>
+        <a href="/team" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] transition-colors">Team</a>
+        <a href="/contact" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] transition-colors">Contact</a>
       </nav>
 
-      <div class="flex items-center gap-3" data-ps="src/components/Navigation.astro:nav-actions">
+      <div class="flex items-center gap-3">
         <a
           href="tel:+17276033334"
           class="bg-[#3AA6C4] hover:bg-[#318ca5] text-white text-[16px] font-normal px-5 py-2.5 rounded-[4px] transition-colors whitespace-nowrap shadow-sm"
-          data-ps="src/components/Navigation.astro:btn-phone"
         >
           (727) 603-3334
         </a>
         <a
           href="/contact"
           class="bg-[#22427D] hover:bg-[#1b3564] text-white text-[16px] font-normal px-5 py-2.5 rounded-[4px] transition-colors whitespace-nowrap shadow-sm"
-          data-ps="src/components/Navigation.astro:btn-schedule"
         >
           Schedule a Call
         </a>
@@ -49,7 +46,6 @@
       aria-label="Toggle menu"
       aria-expanded="false"
       aria-controls="mobile-menu"
-      data-ps="src/components/Navigation.astro:mobile-button"
     >
       <svg id="menu-icon-open" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -66,26 +62,23 @@
     class="hidden lg:hidden bg-white border-t border-black/10 px-6 py-5 shadow-lg"
     role="navigation"
     aria-label="Mobile navigation"
-    data-ps="src/components/Navigation.astro:mobile-menu"
   >
-    <nav class="flex flex-col gap-4 mb-6" data-ps="src/components/Navigation.astro:mobile-links">
-      <a href="/" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] py-1 transition-colors" data-ps="src/components/Navigation.astro:m-link-home">Home</a>
-      <a href="/services" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] py-1 transition-colors" data-ps="src/components/Navigation.astro:m-link-services">Services</a>
-      <a href="/team" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] py-1 transition-colors" data-ps="src/components/Navigation.astro:m-link-team">Team</a>
-      <a href="/contact" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] py-1 transition-colors" data-ps="src/components/Navigation.astro:m-link-contact">Contact</a>
+    <nav class="flex flex-col gap-4 mb-6">
+      <a href="/" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] py-1 transition-colors">Home</a>
+      <a href="/services" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] py-1 transition-colors">Services</a>
+      <a href="/team" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] py-1 transition-colors">Team</a>
+      <a href="/contact" class="text-[18px] text-[#222222] font-normal hover:text-[#22427D] py-1 transition-colors">Contact</a>
     </nav>
-    <div class="flex flex-col gap-3" data-ps="src/components/Navigation.astro:m-actions">
+    <div class="flex flex-col gap-3">
       <a
         href="tel:+17276033334"
         class="bg-[#3AA6C4] hover:bg-[#318ca5] text-white text-[16px] font-normal text-center py-3 rounded-[4px] transition-colors"
-        data-ps="src/components/Navigation.astro:m-btn-phone"
       >
         (727) 603-3334
       </a>
       <a
         href="/contact"
         class="bg-[#22427D] hover:bg-[#1b3564] text-white text-[16px] font-normal text-center py-3 rounded-[4px] transition-colors"
-        data-ps="src/components/Navigation.astro:m-btn-schedule"
       >
         Schedule a Call
       </a>

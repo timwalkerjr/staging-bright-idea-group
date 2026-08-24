@@ -4,67 +4,67 @@ const services = [
     title: "AI Search Optimization",
     excerpt: "AI SEO uses artificial intelligence to optimize website content, improve search rankings, and boost online visibility. It automates keyword research, content optimization, and performance tracking--helping businesses achieve better results faster...",
     link: "/service/artificial-intelligence-search-optimization",
-    image: "https://pagesmith-cdn.com/06cfb84b/images/68e9ad149fb2838ec812426c_shutterstock_2407537405-768.webp"
+    image: "/assets/images/service-ai-search.webp"
   },
   {
     title: "Digital Marketing (SEO)",
     excerpt: "Traditional SEO is evolving rapidly. In 2025, 60% of searches end without a click [SparkToro, 2024], and AI Overviews now appear in 13.14% of all queries [Semrush, March 2025]. Your business needs a forward-thinking SEO strategy that optimizes for AI search...",
     link: "/service/digital-marketng",
-    image: "https://pagesmith-cdn.com/06cfb84b/images/68e9ad149fb2838ec812424f_shutterstock_2567392091-768.webp"
+    image: "/assets/images/service-digital-marketing.webp"
   },
   {
     title: "Webflow / WP Web Design",
     excerpt: "Built on Webflow or WordPress our sites are designed specifically for your firm's practice areas and branding. We focus each site on showcasing your firm's expertise while optimizing for increased conversions. Our sites provide a solid background to your firm's...",
     link: "/service/webflow-or-wp-web-design",
-    image: "https://pagesmith-cdn.com/06cfb84b/images/68e9ad149fb2838ec812426b_shutterstock_2523833227-768.webp"
+    image: "/assets/images/service-web-design.webp"
   },
   {
     title: "Review Management",
     excerpt: "Provided by reviewdriver.com - Protect and enhance your online reputation with automated review management that drives more positive client feedback. Our proven system helps you consistently generate authentic reviews while addressing...",
     link: "/service/review-management",
-    image: "https://pagesmith-cdn.com/06cfb84b/images/68e9ad149fb2838ec812421d_68d408cd7a2b169a8e8ccba4_shutterstock_2584178699-768.webp"
+    image: "/assets/images/service-review-management.webp"
   },
   {
     title: "Law Marketing Directory",
     excerpt: "Access our exclusive membership directory featuring vetted marketing vendors we've personally worked with and trust for law firm growth. Members receive detailed vendor insights, performance data, and exclusive discounts on select services, helping...",
     link: "/service/law-marketing-directory",
-    image: "https://pagesmith-cdn.com/06cfb84b/images/68e9ad149fb2838ec812423c_shutterstock_2608140685-768.webp"
+    image: "/assets/images/service-law-marketing-directory.webp"
   },
   {
     title: "TV / OTT Marketing",
     excerpt: "Reach your ideal clients through targeted television and streaming platform advertising campaigns. We leverage advanced audience targeting to ensure your message connects with potential clients across traditional TV and modern OTT platforms like Hulu, Netflix, and...",
     link: "/service/tv-ott-marketing",
-    image: "https://pagesmith-cdn.com/06cfb84b/images/68e9ad149fb2838ec81241fb_68d409bd6b0768a7297d4bdd_shutterstock_501816010-768.webp"
+    image: "/assets/images/service-tv-ott.webp"
   },
   {
     title: "Podcast Advertising",
     excerpt: "In a world flooded with ads, few channels let you speak directly into the listener's ear -- literally. Podcasts provide a unique, trusted environment where attorneys can build authority, educate potential clients, and stay top-of-mind....",
     link: "/service/podcast-advertising-for-law-firms",
-    image: "https://pagesmith-cdn.com/06cfb84b/images/68e9ad149fb2838ec812426d_shutterstock_2370462443-768.webp"
+    image: "/assets/images/service-podcast-advertising.webp"
   },
   {
     title: "Accident Reporting / Leads",
     excerpt: "Capture potential clients immediately after local incidents with our automated accident reporting system that monitors news feeds and publishes relevant content within minutes. This rapid-response content strategy ensures your firm appears prominently when...",
     link: "/service/accident-reporting",
-    image: "https://pagesmith-cdn.com/06cfb84b/images/68e9ad149fb2838ec812426a_68d41bea830a806345052148_shutterstock_2350065443-768.webp"
+    image: "/assets/images/service-accident-reporting.webp"
   }
 ];
 ---
 
-<section class="bg-[rgba(201,210,217,0.45)] pb-20" data-ps="src/components/services/ServicesGrid.astro:qwljox">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[1440px] mx-auto px-6" data-ps="src/components/services/ServicesGrid.astro:z6k2bc">
-    {services.map((service, __psIdx) => (
-      <div class="bg-white grid grid-cols-1 sm:grid-cols-2 rounded-none overflow-hidden shadow-sm group" data-ps={`src/components/services/ServicesGrid.astro:z6k2bd-${__psIdx}`}>
-        <div class="relative h-[220px] sm:h-auto min-h-[200px]" data-ps={`src/components/services/ServicesGrid.astro:z6k2be-${__psIdx}`}>
-          <img src={service.image} alt={service.title} class="w-full h-full object-cover" loading="lazy" data-ps={`src/components/services/ServicesGrid.astro:5bb3o2-${__psIdx}`} />
+<section class="bg-[rgba(201,210,217,0.45)] pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[1440px] mx-auto px-6">
+    {services.map((service) => (
+      <div class="bg-white grid grid-cols-1 sm:grid-cols-2 rounded-none overflow-hidden shadow-sm group">
+        <div class="relative h-[220px] sm:h-auto min-h-[200px]">
+          <img src={service.image} alt={service.title} class="w-full h-full object-cover" loading="lazy" />
         </div>
-        <div class="p-6 sm:p-7 flex flex-col justify-between" data-ps={`src/components/services/ServicesGrid.astro:z6k2bf-${__psIdx}`}>
-          <div data-ps={`src/components/services/ServicesGrid.astro:z6k2bg-${__psIdx}`}>
-            <h3 class="text-[24px] leading-[33.6px] font-bold font-serif text-[rgb(34,34,34)] mb-3" data-ps={`src/components/services/ServicesGrid.astro:3k9ubn-${__psIdx}`}>{service.title}</h3>
-            <p class="text-[16px] leading-[26px] text-[rgb(34,34,34)] mb-4" data-ps={`src/components/services/ServicesGrid.astro:gttnbe-${__psIdx}`}>{service.excerpt}</p>
+        <div class="p-6 sm:p-7 flex flex-col justify-between">
+          <div>
+            <h3 class="text-[24px] leading-[33.6px] font-bold font-serif text-[rgb(34,34,34)] mb-3">{service.title}</h3>
+            <p class="text-[16px] leading-[26px] text-[rgb(34,34,34)] mb-4">{service.excerpt}</p>
           </div>
-          <div class="text-right" data-ps={`src/components/services/ServicesGrid.astro:z6k2bh-${__psIdx}`}>
-            <a href={service.link} class="text-[rgb(34,66,125)] font-normal text-[16px] hover:underline" data-ps={`src/components/services/ServicesGrid.astro:hcss3w-${__psIdx}`}>Learn more</a>
+          <div class="text-right">
+            <a href={service.link} class="text-[rgb(34,66,125)] font-normal text-[16px] hover:underline">Learn more</a>
           </div>
         </div>
       </div>

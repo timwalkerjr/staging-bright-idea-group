@@ -1,6 +1,6 @@
 # Bright Idea Group
 
-Astro migration of PageSmith project `06cfb84b-3615-41b9-805a-6813f0f4d599`.
+Astro site for Bright Idea Group.
 
 ## Hosting
 
@@ -10,7 +10,7 @@ Astro migration of PageSmith project `06cfb84b-3615-41b9-805a-6813f0f4d599`.
 - Static.app mirror URL: `https://staged-brightideagroup.staticdomains.app`
 - Canonical production URL: `https://brightideagroup.com`
 
-The project is deliberately static and host-neutral. Do not add a platform adapter unless the site gains server-rendered routes.
+The project is deliberately static, host-neutral, and self-contained. Images, video, and fonts are stored under `public/assets`; do not add a platform adapter unless the site gains server-rendered routes.
 
 ## Forms
 

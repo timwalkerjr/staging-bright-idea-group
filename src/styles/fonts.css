@@ -1,12 +1,11 @@
-/* Pagesmith platform fonts — served from /_pagesmith/fonts/* via dispatcher.
-   Edit this file to change typography. Never import from fonts.googleapis.com. */
+/* Self-hosted brand fonts. */
 
 @font-face {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('/_pagesmith/fonts/rubik-300.woff2') format('woff2');
+  src: url('/assets/fonts/rubik-300.woff2') format('woff2');
 }
 
 @font-face {
@@ -14,7 +13,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/_pagesmith/fonts/rubik-400.woff2') format('woff2');
+  src: url('/assets/fonts/rubik-400.woff2') format('woff2');
 }
 
 @font-face {
@@ -22,7 +21,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/_pagesmith/fonts/rubik-500.woff2') format('woff2');
+  src: url('/assets/fonts/rubik-500.woff2') format('woff2');
 }
 
 @font-face {
@@ -30,7 +29,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/_pagesmith/fonts/rubik-700.woff2') format('woff2');
+  src: url('/assets/fonts/rubik-700.woff2') format('woff2');
 }
 
 @font-face {
@@ -38,7 +37,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/_pagesmith/fonts/bitter-400.woff2') format('woff2');
+  src: url('/assets/fonts/bitter-400.woff2') format('woff2');
 }
 
 @font-face {
@@ -46,5 +45,5 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/_pagesmith/fonts/bitter-700.woff2') format('woff2');
+  src: url('/assets/fonts/bitter-700.woff2') format('woff2');
 }

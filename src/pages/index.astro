@@ -8,18 +8,33 @@ import { SITE } from '@/config/site';
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'ProfessionalService',
-  name: 'Bright Idea Group',
-  description: 'Scale Your Law Firms Growth with Bright Ideas',
-  url: SITE.url,
-  telephone: '+17276033334',
-  email: 'shaun@brightideagroup.com',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${SITE.url}/#organization`,
+      name: SITE.name,
+      url: SITE.url,
+      logo: new URL('/assets/images/logo.webp', SITE.url).toString(),
+      image: new URL(SITE.ogImage, SITE.url).toString(),
+      description: SITE.description,
+      telephone: '+17276033334',
+      email: 'shaun@brightideagroup.com',
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${SITE.url}/#website`,
+      name: SITE.name,
+      url: SITE.url,
+      description: SITE.description,
+      publisher: { '@id': `${SITE.url}/#organization` },
+    },
+  ],
 };
 ---
 
 <BaseLayout
-  title="Bright Idea Group 2025"
-  description="Scale Your Law Firms Growth with Bright Ideas. We can help forge a path to bright ideas that are unique to you, work for you & drive results for you."
+  title={SITE.title}
+  description={SITE.description}
   jsonLd={jsonLd}
 >
   <Hero />
