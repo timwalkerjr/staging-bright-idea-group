@@ -1,0 +1,139 @@
+{
+  "success": true,
+  "url": "https://brightideagroup.com/",
+  "structured": {
+    "title": "Bright Idea Group 2025",
+    "description": "",
+    "url": "https://brightideagroup.com/",
+    "imageCount": 13,
+    "branding": {
+      "colors": {
+        "primary": "#22427D",
+        "secondary": "#7D838F",
+        "accent": "#3AA6C4",
+        "background": "#FFFFFF",
+        "textPrimary": "#3AA6C4",
+        "link": "#3AA6C4"
+      },
+      "typography": {
+        "fontFamilies": {
+          "primary": "Rubik",
+          "heading": "Bitter"
+        },
+        "fontStacks": {
+          "heading": [
+            "Bitter",
+            "serif"
+          ],
+          "body": [
+            "Rubik",
+            "sans-serif"
+          ],
+          "paragraph": [
+            "Rubik",
+            "sans-serif"
+          ]
+        },
+        "fontSizes": {
+          "h1": "44px",
+          "h2": "36px",
+          "body": "18px"
+        }
+      },
+      "spacing": {
+        "baseUnit": 8,
+        "borderRadius": "0px"
+      },
+      "logo": "https://cdn.prod.website-files.com/68e9ad149fb2838ec812418c/68e9ad149fb2838ec8124209_LOGO-v6-final.png",
+      "favicon": "https://cdn.prod.website-files.com/68e9ad149fb2838ec812418c/68ee560202ec3f84e6e7c7f5_bright-idea-group-favicon.png",
+      "faviconCdn": "https://pagesmith-cdn.com/06cfb84b/images/68ee560202ec3f84e6e7c7f5_bright-idea-group-favicon-32.webp"
+    },
+    "pages": [
+      {
+        "slug": "index",
+        "path": "/",
+        "title": "Bright Idea Group 2025",
+        "file": "data/pages/index.md"
+      }
+    ],
+    "availablePages": [
+      {
+        "path": "/service/digital-marketng/",
+        "label": "Digital Marketing (SEO) - Bright Idea Group",
+        "slug": "service-digital-marketng",
+        "scraped": false
+      },
+      {
+        "path": "/service/review-management/",
+        "label": "Review Management - Bright Idea Group",
+        "slug": "service-review-management",
+        "scraped": false
+      },
+      {
+        "path": "/service/webflow-or-wp-web-design/",
+        "label": "Webflow / WP Web Design - Bright Idea Group",
+        "slug": "service-webflow-or-wp-web-design",
+        "scraped": false
+      },
+      {
+        "path": "/service/artificial-intelligence-search-optimization/",
+        "label": "AI Search Optimization - Bright Idea Group",
+        "slug": "service-artificial-intelligence-search-optimization",
+        "scraped": false
+      },
+      {
+        "path": "/contact/",
+        "label": "Contact",
+        "slug": "contact",
+        "scraped": false
+      },
+      {
+        "path": "/service/law-marketing-directory/",
+        "label": "Law Marketing Directory - Bright Idea Group",
+        "slug": "service-law-marketing-directory",
+        "scraped": false
+      },
+      {
+        "path": "/services/",
+        "label": "Services",
+        "slug": "services",
+        "scraped": false
+      },
+      {
+        "path": "/service/accident-reporting/",
+        "label": "Accident Reporting / Leads - Bright Idea Group",
+        "slug": "service-accident-reporting",
+        "scraped": false
+      },
+      {
+        "path": "/team/",
+        "label": "Team",
+        "slug": "team",
+        "scraped": false
+      },
+      {
+        "path": "/service/tv-ott-marketing/",
+        "label": "TV / OTT Marketing - Bright Idea Group",
+        "slug": "service-tv-ott-marketing",
+        "scraped": false
+      },
+      {
+        "path": "/service/podcast-advertising-for-law-firms/",
+        "label": "Podcast Advertising - Bright Idea Group",
+        "slug": "service-podcast-advertising-for-law-firms",
+        "scraped": false
+      }
+    ]
+  },
+  "metadata": {
+    "scraper": "firecrawl-crawl-endpoint",
+    "timestamp": "2026-08-21T17:33:16.121Z",
+    "homepageContentLength": 4369,
+    "imageCount": 13,
+    "hasBranding": true,
+    "hasElementorEnrichment": false,
+    "hasVisibleIr": false,
+    "pagesDiscovered": 11,
+    "pagesScraped": 1
+  }
+}

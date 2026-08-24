@@ -1,0 +1,101 @@
+@import 'tailwindcss';
+@import './fonts.css';
+@plugin "@tailwindcss/typography";
+
+:root {
+  --font-sans: 'Rubik', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Bitter', Georgia, serif;
+  --nav-height: 80px;
+
+  --color-background: hsl(0 0% 100%); /* #ffffff */
+  --color-foreground: hsl(0 0% 13%); /* #212121 */
+  --color-muted-foreground: hsl(220 7% 45%); /* #6b707b */
+  --color-border: hsl(193 54% 50%); /* #3ba7c4 */
+  --color-surface: hsl(206 20% 92%); /* #e7ebef */
+  --color-primary: hsl(219 57% 31%); /* #22427c */
+  --color-primary-foreground: hsl(0 0% 100%); /* #ffffff */
+  --color-primary-hover: hsl(219 57% 25%); /* #1b3564 */
+  --color-secondary: hsl(193 54% 50%); /* #3ba7c4 */
+  --color-secondary-foreground: hsl(0 0% 100%); /* #ffffff */
+  --color-secondary-hover: hsl(193 54% 42%); /* #318ca5 */
+  --color-dark-background: hsl(219 61% 9%); /* #091325 */
+  --color-dark-foreground: hsl(0 0% 100%); /* #ffffff */
+  --color-dark-muted-foreground: hsl(210 20% 80%); /* #c2ccd6 */
+  --color-dark-border: hsl(219 45% 20%); /* #1c2c4a */
+  --color-accent: hsl(193 54% 50%); /* #3ba7c4 */
+    --text-h1: clamp(2rem, 0.9rem + 3.6vw, 4rem);
+    --text-h2: clamp(1.625rem, 1.1rem + 1.8vw, 2.5rem);
+    --text-h3: clamp(1.25rem, 1.05rem + 0.7vw, 1.625rem);
+}
+
+@theme {
+  --color-accent: var(--color-accent);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-muted-foreground: var(--color-muted-foreground);
+  --color-border: var(--color-border);
+  --color-surface: var(--color-surface);
+
+  --color-primary: var(--color-primary);
+  --color-primary-foreground: var(--color-primary-foreground);
+  --color-primary-hover: var(--color-primary-hover);
+
+  --color-secondary: var(--color-secondary);
+  --color-secondary-foreground: var(--color-secondary-foreground);
+  --color-secondary-hover: var(--color-secondary-hover);
+
+  --color-dark-background: var(--color-dark-background);
+  --color-dark-foreground: var(--color-dark-foreground);
+  --color-dark-muted-foreground: var(--color-dark-muted-foreground);
+  --color-dark-border: var(--color-dark-border);
+  --color-dark: var(--color-dark-background);
+  --color-dark-muted: var(--color-dark-muted-foreground);
+
+  --color-success: var(--color-success);
+  --color-error: var(--color-error);
+  --color-warning: var(--color-warning);
+
+  --text-h1: var(--text-h1);
+  --text-h1--line-height: 1.4;
+  --text-h2: var(--text-h2);
+  --text-h2--line-height: 1.4;
+  --text-h3: var(--text-h3);
+  --text-h3--line-height: 1.4;
+}
+
+/* Prevent horizontal scrolling on all devices */
+html,
+body {
+  overflow-x: clip;
+  font-family: var(--font-sans);
+}
+
+html {
+  scroll-padding-top: var(--nav-height);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+
+p,
+li {
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+}

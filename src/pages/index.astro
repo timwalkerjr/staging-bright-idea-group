@@ -1,0 +1,29 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/home/Hero.astro';
+import Services from '@/components/home/Services.astro';
+import CtaBanner from '@/components/home/CtaBanner.astro';
+import Contact from '@/components/home/Contact.astro';
+import { SITE } from '@/config/site';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'Bright Idea Group',
+  description: 'Scale Your Law Firms Growth with Bright Ideas',
+  url: SITE.url,
+  telephone: '+17276033334',
+  email: 'shaun@brightideagroup.com',
+};
+---
+
+<BaseLayout
+  title="Bright Idea Group 2025"
+  description="Scale Your Law Firms Growth with Bright Ideas. We can help forge a path to bright ideas that are unique to you, work for you & drive results for you."
+  jsonLd={jsonLd}
+>
+  <Hero />
+  <Services />
+  <CtaBanner />
+  <Contact />
+</BaseLayout>

@@ -1,0 +1,142 @@
+---
+---
+
+<section id="contact" class="bg-[rgba(201,210,217,0.45)]">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 max-w-[1440px] mx-auto px-6 py-20">
+    <!-- Left column: info -->
+    <div>
+      <h2 class="text-[36px] leading-[50.4px] font-bold font-serif text-[rgb(34,34,34)] mb-6">
+        Contact us
+      </h2>
+      <p class="text-[18px] leading-[28.8px] font-normal font-sans text-[rgb(34,34,34)] mb-8">
+        We are available most days during normal business hours to consult with you and determine how we might best help your firm. Reach out to us using the form or the contact information below.
+      </p>
+
+      <ul class="space-y-4">
+        <li class="flex items-center gap-4">
+          <span class="flex items-center justify-center w-10 h-10 rounded-[4px] bg-[rgba(34,66,125,0.08)] flex-shrink-0">
+            <svg viewBox="0 0 24 24" fill="rgb(34, 66, 125)" class="w-5 h-5">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg>
+          </span>
+          <a
+            href="mailto:shaun@brightideagroup.com"
+            class="text-[18px] text-[rgb(34,34,34)] hover:text-[rgb(34,66,125)] transition-colors"
+          >
+            shaun@brightideagroup.com
+          </a>
+        </li>
+        <li class="flex items-center gap-4">
+          <span class="flex items-center justify-center w-10 h-10 rounded-[4px] bg-[rgba(34,66,125,0.08)] flex-shrink-0">
+            <svg viewBox="0 0 24 24" fill="rgb(34, 66, 125)" class="w-5 h-5">
+              <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.58l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z" />
+            </svg>
+          </span>
+          <a
+            href="tel:+17276033334"
+            class="text-[18px] text-[rgb(34,34,34)] hover:text-[rgb(34,66,125)] transition-colors"
+          >
+            +1 (727) 603-3334
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right column: form -->
+    <div>
+      <form
+        id="contact-form"
+        class="space-y-4"
+        novalidate
+      >
+        <div>
+          <label for="name" class="block text-[16px] font-medium text-[rgb(34,34,34)] mb-2">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full bg-white border border-[rgb(58,166,196)] rounded-[4px] px-4 py-3 text-[18px] text-[rgb(34,34,34)] focus:outline-none focus:ring-2 focus:ring-[rgb(58,166,196)]"
+          />
+        </div>
+        <div>
+          <label for="email" class="block text-[16px] font-medium text-[rgb(34,34,34)] mb-2">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full bg-white border border-[rgb(58,166,196)] rounded-[4px] px-4 py-3 text-[18px] text-[rgb(34,34,34)] focus:outline-none focus:ring-2 focus:ring-[rgb(58,166,196)]"
+          />
+        </div>
+        <div>
+          <label for="phone" class="block text-[16px] font-medium text-[rgb(34,34,34)] mb-2">Best Contact Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="w-full bg-white border border-[rgb(58,166,196)] rounded-[4px] px-4 py-3 text-[18px] text-[rgb(34,34,34)] focus:outline-none focus:ring-2 focus:ring-[rgb(58,166,196)]"
+          />
+        </div>
+        <div>
+          <label for="message" class="block text-[16px] font-medium text-[rgb(34,34,34)] mb-2">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Type your message..."
+            required
+            class="w-full bg-white border border-[rgb(58,166,196)] rounded-[4px] px-4 py-3 text-[18px] text-[rgb(34,34,34)] focus:outline-none focus:ring-2 focus:ring-[rgb(58,166,196)] resize-y"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="bg-[rgb(34,66,125)] text-white border border-black/20 rounded-[4px] px-8 py-3 text-[18px] font-normal hover:bg-[rgb(26,51,97)] transition-colors mt-2"
+        >
+          Submit
+        </button>
+      </form>
+
+      <div
+        id="form-success"
+        class="hidden mt-6 p-4 bg-[rgba(58,166,196,0.1)] border border-[rgb(58,166,196)] rounded-[4px] text-[rgb(34,66,125)]"
+        role="alert"
+      >
+        Thank you! Your submission has been received!
+      </div>
+      <div
+        id="form-error"
+        class="hidden mt-6 p-4 bg-red-50 border border-red-400 rounded-[4px] text-red-700"
+        role="alert"
+      >
+        Oops! Something went wrong while submitting the form.
+      </div>
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+  (function () {
+    const form = document.getElementById('contact-form');
+    if (!form) return;
+    const success = document.getElementById('form-success');
+    const error = document.getElementById('form-error');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      if (success) success.classList.add('hidden');
+      if (error) error.classList.add('hidden');
+
+      try {
+        const data = Object.fromEntries(new FormData(form).entries());
+        // Simulated submission — replace with real endpoint as needed
+        await new Promise((resolve) => setTimeout(resolve, 300));
+        console.log('Form submitted:', data);
+        form.reset();
+        if (success) success.classList.remove('hidden');
+      } catch (err) {
+        if (error) error.classList.remove('hidden');
+      }
+    });
+  })();
+</script>

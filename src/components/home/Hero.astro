@@ -1,0 +1,54 @@
+---
+// Hero section matching brightideagroup.com
+---
+
+<section id="hero" class="relative bg-[#091325] text-white overflow-hidden" data-ps="src/components/home/Hero.astro:hero-section">
+  <!-- Background Video with Poster Fallback -->
+  <div class="absolute inset-0 w-full h-full z-0 overflow-hidden" data-ps="src/components/home/Hero.astro:video-wrapper">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="https://pagesmith-cdn.com/06cfb84b/images/68d34b329e7d930b90697226_a-lot-of-edison-old-fashion-bulbs-or-lamps-hanged-2025-08-28-14-45-38-utc-(1440p)-poster-00001-1024.webp"
+      class="w-full h-full object-cover"
+      data-ps="src/components/home/Hero.astro:bg-video"
+    >
+      <source
+        src="https://pagesmith-cdn.com/06cfb84b/videos/68e9ad149fb2838ec81241e0_a-lot-of-edison-old-fashion-bulbs-or-lamps-hanged-2025-08-28-14-45-38-utc-(1440p)-transcode.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <!-- Scrim Overlay: rgba(0, 19, 53, 0.75) -->
+    <div class="absolute inset-0 bg-[#001335]/75" data-ps="src/components/home/Hero.astro:video-overlay"></div>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="relative z-10 max-w-[1440px] mx-auto px-6 py-20 md:py-28 min-h-[580px] flex flex-col justify-center items-start text-left" data-ps="src/components/home/Hero.astro:content-container">
+    <div class="max-w-[860px]" data-ps="src/components/home/Hero.astro:text-box">
+      <h1 class="leading-[1.25] md:leading-[61.6px] font-bold font-serif text-white mb-6 text-[44px]" data-ps="src/components/home/Hero.astro:heading">
+        Scale Your Law Firms Growth with Bright Ideas
+      </h1>
+      <p class="text-[18px] leading-[28.8px] font-normal text-white/90 max-w-[720px] mb-8" data-ps="src/components/home/Hero.astro:subhead">
+        Stay Ahead Of Your Competitors! Most small to mid-size law firms are fed strategies that don't work for them. We can help forge a path to bright ideas that are unique to you, work for you &amp; drive results for you.
+      </p>
+
+      <div class="flex flex-wrap items-center gap-4" data-ps="src/components/home/Hero.astro:button-group">
+        <a
+          href="/services"
+          class="bg-[#22427D] hover:bg-[#1b3564] text-white text-[18px] font-normal px-6 py-3 rounded-[4px] transition-colors shadow-md text-center"
+          data-ps="src/components/home/Hero.astro:btn-services"
+        >
+          Explore Our Services
+        </a>
+        <a
+          href="/contact"
+          class="bg-[#3AA6C4] hover:bg-[#318ca5] text-white text-[18px] font-normal px-6 py-3 rounded-[4px] transition-colors shadow-md text-center"
+          data-ps="src/components/home/Hero.astro:btn-consultation"
+        >
+          Schedule a Consultation
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

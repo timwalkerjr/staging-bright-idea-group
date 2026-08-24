@@ -1,0 +1,39 @@
+---
+// Mid-page CTA Banner matching brightideagroup.com
+---
+
+<section id="cta-banner" class="relative bg-[#091325] text-white overflow-hidden" data-ps="src/components/home/CtaBanner.astro:cta-section">
+  <!-- Background Video with Poster Fallback -->
+  <div class="absolute inset-0 w-full h-full z-0 overflow-hidden" data-ps="src/components/home/CtaBanner.astro:video-wrapper">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="https://pagesmith-cdn.com/06cfb84b/images/68d34b329e7d930b90697226_a-lot-of-edison-old-fashion-bulbs-or-lamps-hanged-2025-08-28-14-45-38-utc-(1440p)-poster-00001-1024.webp"
+      class="w-full h-full object-cover"
+      data-ps="src/components/home/CtaBanner.astro:bg-video"
+    >
+      <source
+        src="https://pagesmith-cdn.com/06cfb84b/videos/68e9ad149fb2838ec81241e0_a-lot-of-edison-old-fashion-bulbs-or-lamps-hanged-2025-08-28-14-45-38-utc-(1440p)-transcode.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <!-- Scrim Overlay: rgba(0, 19, 53, 0.75) -->
+    <div class="absolute inset-0 bg-[#001335]/75" data-ps="src/components/home/CtaBanner.astro:video-overlay"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-[1440px] mx-auto px-6 py-24 flex flex-col items-center justify-center text-center gap-8" data-ps="src/components/home/CtaBanner.astro:content">
+    <h2 class="text-[30px] sm:text-[36px] md:text-[40px] leading-[1.3] font-bold font-serif text-white max-w-[800px]" data-ps="src/components/home/CtaBanner.astro:heading">
+      Contact us today and we will illuminate the path to growth!
+    </h2>
+    <a
+      href="/contact"
+      class="bg-[#3AA6C4] hover:bg-[#318ca5] text-white text-[18px] font-normal px-8 py-3 rounded-[4px] transition-colors shadow-md"
+      data-ps="src/components/home/CtaBanner.astro:btn-consultation"
+    >
+      Schedule a Consultation
+    </a>
+  </div>
+</section>
